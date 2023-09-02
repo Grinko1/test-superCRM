@@ -8,12 +8,12 @@ interface TaskListProps {
   loading: boolean;
   page: number;
   setPage: (page: number) => void;
-  toggleCompete:(id:number) =>void;
+  toggleComplete:(id:number) =>void;
 }
 
 const TaskList = memo((props: TaskListProps) => {
-  const { todos, loading, page, setPage, toggleCompete } = props
-  
+  const { todos, loading, page, setPage, toggleComplete } = props
+
   const lastElement = useRef<HTMLDivElement>(null);
   const observer = useRef<IntersectionObserver | null>(null);
 
@@ -44,7 +44,7 @@ const TaskList = memo((props: TaskListProps) => {
   return (
     <div>
       {todos.map((todo) => (
-        <TaskItem todo={todo} key={todo.id}  toggleCompete={toggleCompete}/>
+        <TaskItem todo={todo} key={todo.id}  toggleComplete={toggleComplete}/>
       ))}
       <div ref={lastElement}></div>
     </div>

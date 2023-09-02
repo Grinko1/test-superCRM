@@ -5,14 +5,14 @@ import { memo } from 'react';
 
 interface TaskItemProps {
   todo: Todo;
-  toggleCompete: (id: number) => void;
+  toggleComplete: (id: number) => void;
 }
-const TaskItem = memo(({ todo, toggleCompete }: TaskItemProps) => {
+const TaskItem = memo(({ todo, toggleComplete }: TaskItemProps) => {
   return (
     <BorderedBox>
       <div className={style.TaskItem}>
         <div className={style.Title}>
-          <input type='checkbox' checked={todo.completed} onChange={() => toggleCompete(todo.id)} />
+          <input type='checkbox' checked={todo.completed} onChange={() => toggleComplete(todo.id)} />
           <span>{todo.title}</span>
         </div>
         <div className={style.Time}>

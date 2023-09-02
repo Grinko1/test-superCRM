@@ -1,15 +1,15 @@
-import {Sidebar} from "../containers/sidebar";
-import '../Index.scss'
-import {observer} from 'mobx-react-lite'
+import Header from '../components/header/Header';
+import { Sidebar } from '../containers/sidebar';
+import '../Index.scss';
 
 
-const App = observer(() => {
-    return (
-        <div className="app">
-    
-     <Sidebar/>
-        </div>
-    );
-});
+const App = () => {
+  return (
+    <div className='app'>
+      <Header />
+      <Sidebar />
+    </div>
+  );
+};
 
 export default App;

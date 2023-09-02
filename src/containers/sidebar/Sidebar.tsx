@@ -17,7 +17,7 @@ const Sidebar = memo(() => {
     });
   }, [page]);
 
-  const toggleCompete = useCallback(
+  const toggleComplete = useCallback(
     (id: number) => {
       const changedArr = todos.map((item) => {
         if (item.id === id) {
@@ -38,7 +38,7 @@ const Sidebar = memo(() => {
         loading={loading}
         page={page}
         setPage={setPage}
-        toggleCompete={toggleCompete}
+        toggleComplete={toggleComplete}
       />
     </SidebarLayout>
   );

@@ -1,0 +1,15 @@
+.Header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px;
+    text-align: center;
+    gap: 8px;
+    img{
+        width: 100px;
+    }
+    img:nth-child(2){
+        width: 94px;
+    }
+}
