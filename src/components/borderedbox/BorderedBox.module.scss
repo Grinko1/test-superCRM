@@ -1,0 +1,27 @@
+.BorderedBox {
+  width: 255px;
+  // height: 158px;
+  padding: 10px;
+  // border: 6px solid #d0daeb;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  // overflow: hidden;
+  background: #fff;
+  margin-bottom: 22px;
+  box-shadow: 0 0 0 7px transparent;
+
+
+  &::before {
+  content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    background: linear-gradient(to bottom right, #d0daeb, #EEF4FE);
+    border-radius: 15px;
+    z-index: -1;
+  }
+
+}

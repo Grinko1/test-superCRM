@@ -1,0 +1,40 @@
+.SidebarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+    margin-bottom: 10px;
+    width: 260px;
+}
+
+.headerDay {
+    color: #50b810;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.headerActions {
+    display: flex;
+    gap: 8px;
+
+    button {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        background: #ebeef6;
+        color: #3d8fec;
+        border: none;
+    }
+
+    .qtt {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid #7B8AAB;
+        box-sizing: border-box;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
