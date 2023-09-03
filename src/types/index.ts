@@ -1,12 +1,8 @@
-export interface Todo {
-  userId?: number;
-  id: number;
-  title: string;
+export interface Todo extends TodoFetched {
   decs: string;
   startTime: string;
   endTime: string;
   tags: string[];
-  completed: boolean;
 }
 
 export interface TodoFetched {

@@ -8,8 +8,9 @@ const SidebarHeader = ({ todosLength }: SidebarHeaderProps) => {
     <div className={style.SidebarHeader}>
       <span className={style.headerDay}>Today</span>
       <div className={style.headerActions}>
-        <button>+</button>
-        <div className={style.qtt}>{todosLength}</div>
+        <button><img src="./assets/add.png" alt="" /></button>
+        <div className={style.qtt}>
+          {todosLength}</div>
       </div>
     </div>
   );

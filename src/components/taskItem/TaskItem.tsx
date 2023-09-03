@@ -12,7 +12,11 @@ const TaskItem = memo(({ todo, toggleComplete }: TaskItemProps) => {
     <BorderedBox>
       <div className={style.TaskItem}>
         <div className={style.Title}>
-          <input type='checkbox' checked={todo.completed} onChange={() => toggleComplete(todo.id)} />
+          <input
+            type='checkbox'
+            checked={todo.completed}
+            onChange={() => toggleComplete(todo.id)}
+          />
           <span>{todo.title}</span>
         </div>
         <div className={style.Time}>
