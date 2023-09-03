@@ -6,20 +6,21 @@
   border-radius: 8px;
   box-sizing: border-box;
   position: relative;
-  // overflow: hidden;
   background: #fff;
   margin-bottom: 22px;
-  box-shadow: 0 0 0 7px transparent;
+  box-shadow: 0 0 0 2px rgba(238, 244, 254, 1);
+
 
 
   &::before {
   content: "";
     position: absolute;
-    top: -7px;
-    left: -7px;
-    right: -7px;
-    bottom: -7px;
-    background: linear-gradient(to bottom right, #d0daeb, #EEF4FE);
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    // background: linear-gradient(to bottom right, #d0daeb, #EEF4FE);
+    background:rgba(238, 244, 254, 1);
     border-radius: 15px;
     z-index: -1;
   }

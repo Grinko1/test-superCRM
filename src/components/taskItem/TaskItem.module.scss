@@ -11,10 +11,12 @@
     justify-content: center;
     input {
       width: 16px;
+      height: 16px;
       margin-right: 6px;
       position: relative;
       top: 3px;
     }
+    
 
     font-size: 14px;
     color: #3d8fec;
@@ -41,10 +43,13 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-weight: 400;
+    margin-bottom: 2px;
   }
   .Footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 17px;
     font-size: 12px;
     line-height: 16px;

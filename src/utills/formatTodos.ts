@@ -10,7 +10,7 @@ export function formatTodos (arr:TodoFetched[]):Todo[] {
 return arr.map((item) => {
     return {
       ...item,
-      decs: faker.lorem.sentence({ min: 3, max: 10 }),
+      decs:faker.lorem.sentence({ min: 3, max: 10 }),
       startTime: getRandomDate(),
       endTime: getRandomDate(),
       tags: getRandomTags(),
